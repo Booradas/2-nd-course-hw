@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px px);
+}
+
+.top {
+    height: 1024px;
+    background-image: url(../img/top-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__heading {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        width: 788px;
+        padding-top: 218px;
+    }
+    &__subtitle {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0px;
+        max-width: 482px;
+        margin-top: 32px;
+    }
+    &__link {
+        color: #ffffff;
+        font-weight: 700;
+    }
+    &__button {
+        border-radius: 30px;
+        background: rgb(156, 3, 50);
+        height: 48px;
+        width: 234px;
+        margin-top: 44px;
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transition: all 0.3s;
+        &:hover {
+            background: rgb(235, 68, 63);
+        }
+    }
+}
+
+.products {
+    background-image: url(../img/products-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__box {
+        display: flex;
+        gap: 32px;
+        padding-top: 128px;
+        padding-bottom: 128px;
+        flex-wrap: wrap;
+
+    }
+}
+.product {
+    height: 300px;
+    max-width: 379px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    position: relative;
+    &__img {
+        border-radius: 16px;
+        background: linear-gradient(180.00deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%), url(0023);
+        width: 100%;
+        transition: all 0.3s;
+        &:hover {
+            box-sizing: border-box;
+            border: 3px solid rgb(68, 210, 255);
+        }
+    }
+    &__text {
+        position: absolute;
+        bottom: 32px;
+        left: 32px;
+    }
+}
