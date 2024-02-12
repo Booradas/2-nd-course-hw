@@ -5,6 +5,10 @@
 
 a {
   text-decoration: none;
+  transition: all 0.3s;
+}
+a:hover {
+  cursor: url(../img/cursor.svg), pointer;
 }
 
 .center {
