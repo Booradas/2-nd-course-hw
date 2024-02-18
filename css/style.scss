@@ -22,6 +22,12 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: start;
+    }
     &__heading {
         color: rgb(255, 255, 255);
         font-family: Montserrat;
@@ -29,7 +35,7 @@ a {
         font-weight: 700;
         line-height: 78px;
         letter-spacing: 0px;
-        width: 788px;
+        max-width: 788px;
         padding-top: 218px;
     }
     &__subtitle {
@@ -109,3 +115,5 @@ a {
         left: 32px;
     }
 }
+
+@import 'mobile.scss';
