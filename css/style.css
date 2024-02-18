@@ -93,16 +93,18 @@ a:hover {
   letter-spacing: 0px;
   text-align: left;
   position: relative;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  border-radius: 16px;
+}
+.product:hover {
+  border: 3px solid rgb(68, 210, 255);
 }
 .product__img {
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%), url(0023);
   width: 100%;
-  transition: all 0.3s;
-}
-.product__img:hover {
-  box-sizing: border-box;
-  border: 3px solid rgb(68, 210, 255);
 }
 .product__text {
   position: absolute;
