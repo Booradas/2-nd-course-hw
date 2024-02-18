@@ -59,3 +59,19 @@ switch (clientOS) {
 }
 
 //-------------------------------------------------task 9.0-------------------------------------------------
+let clientDeviceYear = Number(prompt('Введите год выпуска вашего телефона'));
+if (clientDeviceYear < 2015 && clientOS === 1) {
+    console.log('Установите облегченную версию приложения для Android по ссылке');
+}
+else if (clientDeviceYear < 2015 && clientOS === 0) {
+    console.log('Установите облегченную версию приложения для iOS по ссылке');
+}
+else if (clientDeviceYear >= 2015 && clientOS === 0) {
+    console.log('Установите наше приложение для iOS по ссылке');
+}
+else if (clientDeviceYear >= 2015 && clientOS === 1) {
+    console.log('Установите наше приложение для Android по ссылке');
+}
+else {
+    console.log('Вы ввели неверное значение');
+};

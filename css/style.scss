@@ -29,7 +29,7 @@ a {
         font-weight: 700;
         line-height: 78px;
         letter-spacing: 0px;
-        width: 788px;
+        max-width: 788px;
         padding-top: 218px;
     }
     &__subtitle {
@@ -114,3 +114,4 @@ a {
         left: 32px;
     }
 }
+@import 'mobile';

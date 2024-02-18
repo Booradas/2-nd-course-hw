@@ -30,7 +30,7 @@ a:hover {
   font-weight: 700;
   line-height: 78px;
   letter-spacing: 0px;
-  width: 788px;
+  max-width: 788px;
   padding-top: 218px;
 }
 .top__subtitle {
@@ -110,4 +110,54 @@ a:hover {
   position: absolute;
   bottom: 32px;
   left: 32px;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .product {
+    max-width: 345px;
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .products__box {
+    gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    height: 735px;
+  }
+  .top__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .top__heading {
+    font-size: 32px;
+    padding-top: 218px;
+    text-align: center;
+  }
+  .top__subtitle {
+    font-size: 14px;
+    text-align: center;
+  }
+  .product__text {
+    bottom: 48px;
+    left: 16px;
+  }
+  .products__box {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
