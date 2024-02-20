@@ -148,10 +148,12 @@ a:hover {
     font-size: 32px;
     padding-top: 218px;
     text-align: center;
+    line-height: 39px;
   }
   .top__subtitle {
     font-size: 14px;
     text-align: center;
+    line-height: 22px;
   }
   .product__text {
     bottom: 48px;
