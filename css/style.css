@@ -23,6 +23,12 @@ a:hover {
   background-position: center;
   background-size: cover;
 }
+.top__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+}
 .top__heading {
   color: rgb(255, 255, 255);
   font-family: Montserrat;
@@ -111,7 +117,6 @@ a:hover {
   bottom: 32px;
   left: 32px;
 }
-
 @media (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 393px);
