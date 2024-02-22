@@ -99,23 +99,24 @@ a:hover {
   letter-spacing: 0px;
   text-align: left;
   position: relative;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  border-radius: 16px;
+}
+.product:hover {
+  border: 3px solid rgb(68, 210, 255);
 }
 .product__img {
   border-radius: 16px;
-  background: linear-gradient(180deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%), url(0023);
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%);
   width: 100%;
-  transition: all 0.3s;
-}
-.product__img:hover {
-  box-sizing: border-box;
-  border: 3px solid rgb(68, 210, 255);
 }
 .product__text {
   position: absolute;
   bottom: 32px;
   left: 32px;
 }
-
 @media (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 393px);
@@ -152,13 +153,18 @@ a:hover {
     font-size: 32px;
     padding-top: 218px;
     text-align: center;
+    line-height: 39px;
   }
   .top__subtitle {
     font-size: 14px;
     text-align: center;
+    line-height: 22px;
   }
   .product__text {
     bottom: 48px;
     left: 16px;
+  }
+  .products__box {
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */
