@@ -7,7 +7,12 @@
     .product {
         max-width: 345px;
     }
-
+    
+    .seasons__img_content {
+        max-width: 344px;
+        max-height: 236px;
+                        
+    }
 
 }
 
@@ -63,5 +68,33 @@
 
     .products__box {
         justify-content: center;
+    }
+
+    .seasons {
+        &__box {
+            grid-template-columns: repeat(1, 1fr);
+            padding-bottom: 85px;
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 52px;
+        }
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+        }
+        &__img {
+            padding-top: 64px;
+            display: flex;
+            justify-content: center;
+        }
+
     }
 }
