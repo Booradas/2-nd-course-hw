@@ -50,7 +50,7 @@ a {
         border-radius: 30px;
         background: rgb(156, 3, 50);
         height: 48px;
-        width: 234px;
+        max-width: 234px;
         margin-top: 44px;
         color: rgb(255, 255, 255);
         font-family: Montserrat;
@@ -207,7 +207,7 @@ a {
 }
 .product {
     height: 300px;
-    max-width: 379px;
+    width: 379px;
     color: rgb(255, 255, 255);
     font-family: Montserrat;
     font-size: 24px;
@@ -216,16 +216,19 @@ a {
     letter-spacing: 0px;
     text-align: left;
     position: relative;
-    &__img {
-        border-radius: 16px;
-        background: linear-gradient(180.00deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%), url(0023);
-        width: 100%;
-        transition: all 0.3s;
+    border: 3px solid transparent;
+    border-radius: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s;
         &:hover {
-            box-sizing: border-box;
             border: 3px solid rgb(68, 210, 255);
         }
+
+    &__img {
+        background: linear-gradient(180.00deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%);
+        width: 100%;
     }
+
     &__text {
         position: absolute;
         bottom: 32px;
@@ -233,4 +236,55 @@ a {
     }
 }
 
+.seasons{
+    background-image: url(../img/seasons_bg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 135px;
+        padding-bottom: 234px;
+    }
+
+    &__content {
+        grid-column: span 1;
+        padding-top: 282px;
+
+    }
+
+    &__img {
+        grid-column: span 1;
+        padding-top: 234px;
+
+    }
+
+    &__img-content {
+        max-width: 485px;
+        max-height: 333px;
+    }
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    &__text {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+
+}
 @import 'mobile.scss';
