@@ -2,19 +2,17 @@
 
 // const numbs = [1, 5, 4, 10, 0, 3];
 // for (let i = 0; i < numbs.length; i++) {
-//    if (numbs[i] == 0) break;
 //    console.log(numbs[i]);
+//    if (numbs[i] == 10)
+//       break;  
 // }
 
 //--------------------------------------------------task 2--------------------------------------------------
 
 // const numbs = [1, 5, 4, 10, 0, 3];
-// for (let i = 0; i < numbs.length; i++) {
-//    if (numbs[i] === 4) { 
-//    const position = numbs.indexOf(4);
-//    console.log(position, numbs[i]);
-// }
-// }
+// const position = numbs.indexOf(4);
+// console.log(position);
+
 
 //--------------------------------------------------task 3--------------------------------------------------
 // const numbsArray = [1, 3, 5, 10, 20];
@@ -51,6 +49,8 @@
 //    let num = Number(prompt('Введите число'));
 //    if (userNumbArr.includes(num)) {
 //       alert('Угадал');
+//    } else if (isNaN(num)) {
+//       alert('Вы ввели не число');
 //    } else {
 //       alert('Не угадал');
 //    }
@@ -71,7 +71,7 @@
 //    [1, 2, 3],
 //    [4, 5, 6]
 // ];
-// const unionArrays = numbArrays[0].concat(numbArrays[1]);
+// const unionArrays = numbArrays.flat();
 // console.log(unionArrays);
 
 //--------------------------------------------------task 10--------------------------------------------------
