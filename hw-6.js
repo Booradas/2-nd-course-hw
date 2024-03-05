@@ -47,10 +47,11 @@
 // const userNumbArr = [9, 8, 7, 6, 5];
 // const userNumb = () => {
 //    let num = Number(prompt('Введите число'));
-//    if (userNumbArr.includes(num)) {
-//       alert('Угадал');
-//    } else if (isNaN(num)) {
+//    if (isNaN(num)) {
 //       alert('Вы ввели не число');
+//    }
+//    else if (userNumbArr.includes(num)) {
+//       alert('Угадал');
 //    } else {
 //       alert('Не угадал');
 //    }
