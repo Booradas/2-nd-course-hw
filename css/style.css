@@ -124,6 +124,10 @@ a:hover {
     max-width: 344px;
     max-height: 236px;
   }
+  .words__img_content {
+    max-width: 344px;
+    max-height: 236px;
+  }
 }
 @media (min-width: 768px) and (max-width: 833px) {
   .center {
@@ -186,6 +190,30 @@ a:hover {
     text-align: center;
   }
   .seasons__img {
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+  }
+  .words__box {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 90px;
+  }
+  .words__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 72px;
+  }
+  .words__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .words__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .words__img {
     padding-top: 64px;
     display: flex;
     justify-content: center;
@@ -354,6 +382,50 @@ a:hover {
   text-align: left;
 }
 
+.words {
+  background-image: url(../img/seasons_bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.words__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 135px;
+       column-gap: 135px;
+  padding-bottom: 234px;
+}
+.words__content {
+  grid-column: span 1;
+  padding-top: 282px;
+}
+.words__img {
+  grid-column: span 1;
+  padding-top: 234px;
+}
+.words__img-content {
+  max-width: 485px;
+  max-height: 333px;
+}
+.words__title {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.words__text {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
 @media (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 393px);
@@ -363,6 +435,10 @@ a:hover {
     max-width: 345px;
   }
   .seasons__img_content {
+    max-width: 344px;
+    max-height: 236px;
+  }
+  .words__img_content {
     max-width: 344px;
     max-height: 236px;
   }
@@ -428,6 +504,30 @@ a:hover {
     text-align: center;
   }
   .seasons__img {
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+  }
+  .words__box {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 90px;
+  }
+  .words__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 72px;
+  }
+  .words__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .words__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .words__img {
     padding-top: 64px;
     display: flex;
     justify-content: center;
