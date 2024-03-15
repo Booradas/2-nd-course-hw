@@ -13,6 +13,11 @@
         max-height: 236px;
                         
     }
+    .words__img_content {
+        max-width: 344px;
+        max-height: 236px;
+                        
+    }
 
 }
 
@@ -80,6 +85,33 @@
             flex-direction: column;
             align-items: center;
             padding-top: 52px;
+        }
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+        }
+        &__img {
+            padding-top: 64px;
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+    .words {
+        &__box {
+            grid-template-columns: repeat(1, 1fr);
+            padding-bottom: 90px;
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 72px;
         }
         &__title {
             font-size: 32px;
